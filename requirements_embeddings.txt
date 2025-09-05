@@ -1,6 +1,0 @@
-# Requirements para el script de embeddings BGE-M3 + MongoDB Atlas
-pymongo==4.8.0
-requests==2.32.4
-numpy==1.24.3
-python-dotenv==1.1.1
-dnspython==2.6.1

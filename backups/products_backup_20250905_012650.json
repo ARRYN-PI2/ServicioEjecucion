@@ -1,0 +1,30 @@
+{
+  "backup_info": {
+    "collection_name": "products",
+    "database_name": "smartcompare_ai",
+    "backup_date": "2025-09-05T01:26:50.014151",
+    "total_documents": 57
+  },
+  "documents": [
+    {
+      "_id": "falabella_1",
+      "product_id": "falabella_1",
+      "name": "SAMSUNG - Televisor | 55 pulgadas Crystal UHD 4K HDR | UN55DU7000KXZL",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1699900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor | 55 pulgadas Crystal UHD 4K HDR | UN55DU7000KXZL",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/72923115_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/72923115_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/72923115/Televisor-Samsung-55-pulgadas-Crystal-UHD-4K-HDR-UN55DU7000KXZL/72923115?sponsoredClickData=%257B%2522isXLP%2522%253Atrue%252C%2522pageType%2522%253A%2522search%2522%252C%2522adType%2522%253A%2522products%2522%252C%2522platform%2522%253A%2522desktop%2522%252C%2522regionCode%2522%253A%2522co%2522%252C%2522context%2522%253A%257B%2522userIdentifier%2522%253A%2522MTc1NTU2NTQ5MzE4Nw%253D%253D%2522%252C%2522adIdentifier%2522%253A%2522v2_yHBehcet7s2hsEi-m9j2Nh0tN2SIXmQ1UVa3-sNrExVdc86YzO_WmD9mIyXdbZ6oO0qpKTXMEAI7fi0h6snJDrTtuUsPKGJxsp_KEjaVLyT1twcoU6NXXwf3qBtBpZ2fQZ6rY6QOmSD0SACvljLbAVfBhpj8XY50cuewWL3hRcQ%253D_ark198bfd054d17f7d764%2522%252C%2522slot%2522%253A1%252C%2522signal%2522%253A%2522Televisores%2522%252C%2522providerName%2522%253A%2522mabaya%2522%257D%257D",
+        "scraped_at": 

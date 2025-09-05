@@ -1,0 +1,1881 @@
+{
+  "backup_info": {
+    "collection_name": "products",
+    "database_name": "smartcompare_ai",
+    "backup_date": "2025-09-05T01:27:11.284159",
+    "total_documents": 57
+  },
+  "documents": [
+    {
+      "_id": "falabella_1",
+      "product_id": "falabella_1",
+      "name": "SAMSUNG - Televisor | 55 pulgadas Crystal UHD 4K HDR | UN55DU7000KXZL",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1699900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor | 55 pulgadas Crystal UHD 4K HDR | UN55DU7000KXZL",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/72923115_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/72923115_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/72923115/Televisor-Samsung-55-pulgadas-Crystal-UHD-4K-HDR-UN55DU7000KXZL/72923115?sponsoredClickData=%257B%2522isXLP%2522%253Atrue%252C%2522pageType%2522%253A%2522search%2522%252C%2522adType%2522%253A%2522products%2522%252C%2522platform%2522%253A%2522desktop%2522%252C%2522regionCode%2522%253A%2522co%2522%252C%2522context%2522%253A%257B%2522userIdentifier%2522%253A%2522MTc1NTU2NTQ5MzE4Nw%253D%253D%2522%252C%2522adIdentifier%2522%253A%2522v2_yHBehcet7s2hsEi-m9j2Nh0tN2SIXmQ1UVa3-sNrExVdc86YzO_WmD9mIyXdbZ6oO0qpKTXMEAI7fi0h6snJDrTtuUsPKGJxsp_KEjaVLyT1twcoU6NXXwf3qBtBpZ2fQZ6rY6QOmSD0SACvljLbAVfBhpj8XY50cuewWL3hRcQ%253D_ark198bfd054d17f7d764%2522%252C%2522slot%2522%253A1%252C%2522signal%2522%253A%2522Televisores%2522%252C%2522providerName%2522%253A%2522mabaya%2522%257D%257D",
+        "scraped_at": "2025-08-18T20:07:40.183000",
+        "last_updated": "2025-08-18T20:38:07.524000"
+      },
+      "ratings": {
+        "average_rating": 39.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_2",
+      "product_id": "falabella_2",
+      "name": "HISENSE - Televisor |  65 Pulgadas |  QLED 4K Dolby Vision | 65Q6QV",
+      "brand": "HISENSE",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 2249900.0,
+      "currency": "COP",
+      "description": "HISENSE - Televisor |  65 Pulgadas |  QLED 4K Dolby Vision | 65Q6QV",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73261427_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73261427_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73261427/Televisor-Hisense-65-Pulgadas-QLED-4K-Dolby-Vision-65Q6QV/73261427?sponsoredClickData=%257B%2522isXLP%2522%253Atrue%252C%2522pageType%2522%253A%2522search%2522%252C%2522adType%2522%253A%2522products%2522%252C%2522platform%2522%253A%2522desktop%2522%252C%2522regionCode%2522%253A%2522co%2522%252C%2522context%2522%253A%257B%2522userIdentifier%2522%253A%2522MTc1NTU2NTQ5MzE4Nw%253D%253D%2522%252C%2522adIdentifier%2522%253A%2522v2_tkqV0Hr9viSGdwBOvLSYah0tN2SIXmQ1UVa3-sNrExVdc86YzO_WmD9mIyXdbZ6omAiVoxrgTDra0dTl7gSsmbyYRX9f0DVhyqoSR9Iz3Ok7lRnc-65HlGayXBw5S9FpQZ6rY6QOmSD0SACvljLbAVfBhpj8XY50cuewWL3hRcQ%253D_ark198bfd054d17f7d764%2522%252C%2522slot%2522%253A2%252C%2522signal%2522%253A%2522Televisores%2522%252C%2522providerName%2522%253A%2522mabaya%2522%257D%257D",
+        "scraped_at": "2025-08-18T20:07:40.201000",
+        "last_updated": "2025-08-18T20:38:08.552000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_3",
+      "product_id": "falabella_3",
+      "name": "JVC - Televisor | 43 pulgadas LED FHD | LT-43KM348",
+      "brand": "JVC",
+      "category": "Televisores",
+      "subcategory": "43\"",
+      "price": 899900.0,
+      "currency": "COP",
+      "description": "JVC - Televisor | 43 pulgadas LED FHD | LT-43KM348",
+      "specifications": {
+        "screen_size": "43\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/72993978_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/72993978_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/72993978/Televisor-JVC-43-pulgadas-LED-FHD-LT-43KM348/72993978",
+        "scraped_at": "2025-08-18T20:07:40.219000",
+        "last_updated": "2025-08-18T20:38:09.458000"
+      },
+      "ratings": {
+        "average_rating": 87.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_4",
+      "product_id": "falabella_4",
+      "name": "JVC - Televisor 50 Pulgadas LED 4K HDR Smart TV",
+      "brand": "JVC",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1199900.0,
+      "currency": "COP",
+      "description": "JVC - Televisor 50 Pulgadas LED 4K HDR Smart TV",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/25207924_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/25207924_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/25207924/Televisor-JVC-50-Pulgadas-LED-4K-HDR-Smart-TV/25207924",
+        "scraped_at": "2025-08-18T20:07:40.254000",
+        "last_updated": "2025-08-18T20:38:10.312000"
+      },
+      "ratings": {
+        "average_rating": 70.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_5",
+      "product_id": "falabella_5",
+      "name": "SAMSUNG - Televisor | 55 pulgadas Crystal UHD 4K HDR | UN55DU7000KXZL",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1699900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor | 55 pulgadas Crystal UHD 4K HDR | UN55DU7000KXZL",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/72923115_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/72923115_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/72923115/Televisor-Samsung-55-pulgadas-Crystal-UHD-4K-HDR-UN55DU7000KXZL/72923115",
+        "scraped_at": "2025-08-18T20:07:40.271000",
+        "last_updated": "2025-08-18T20:38:11.117000"
+      },
+      "ratings": {
+        "average_rating": 39.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_6",
+      "product_id": "falabella_6",
+      "name": "SAMSUNG - Combo Televisor + Barra | 55 pulgadas QLED 4K F-QN55Q7FAAKXZ | Barra de sonido HWC400",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 2199900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Combo Televisor + Barra | 55 pulgadas QLED 4K F-QN55Q7FAAKXZ | Barra de sonido HWC400",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73321862_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73321862_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73321862/Combo-Televisor-+-Barra-Samsung-55-pulgadas-QLED-4K-F-QN55Q7FAAKXZ-Barra-de-sonido-HWC400/73321862",
+        "scraped_at": "2025-08-18T20:07:40.286000",
+        "last_updated": "2025-08-18T20:38:11.919000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_7",
+      "product_id": "falabella_7",
+      "name": "CHALLENGER - Televisor 40 Pulgadas Smart Google TV TG81",
+      "brand": "CHALLENGER",
+      "category": "Televisores",
+      "subcategory": "40\"",
+      "price": 809900.0,
+      "currency": "COP",
+      "description": "CHALLENGER - Televisor 40 Pulgadas Smart Google TV TG81",
+      "specifications": {
+        "screen_size": "40\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/142060152_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/142060152_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/142060151/Televisor-40-Pulgadas-Smart-Google-TV-TG81-Challenger/142060152?sponsoredClickData=%257B%2522isXLP%2522%253Atrue%252C%2522pageType%2522%253A%2522search%2522%252C%2522adType%2522%253A%2522products%2522%252C%2522platform%2522%253A%2522desktop%2522%252C%2522regionCode%2522%253A%2522co%2522%252C%2522context%2522%253A%257B%2522userIdentifier%2522%253A%2522MTc1NTU2NTQ5MzE4Nw%253D%253D%2522%252C%2522adIdentifier%2522%253A%2522v2_nwiV_ohfxMZMFLRwPjh29xGXIDOXmgb_v86OSqdYlANdc86YzO_WmD9mIyXdbZ6o5nIAK-mj8cQ7j_hDbywxjFVvEwQ0iBSMZAkKbiGUSjtYjaHZgskbIxfbcYY1hXWn-ced4NlrRAyUNQE7hZqbalfBhpj8XY50cuewWL3hRcQ%253D_ark198bfd054d17f7d764%2522%252C%2522slot%2522%253A7%252C%2522signal%2522%253A%2522Televisores%2522%252C%2522providerName%2522%253A%2522mabaya%2522%257D%257D",
+        "scraped_at": "2025-08-18T20:07:40.302000",
+        "last_updated": "2025-08-18T20:38:12.727000"
+      },
+      "ratings": {
+        "average_rating": 1.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_8",
+      "product_id": "falabella_8",
+      "name": "LG - Televisor | 86 pulgadas LED 4K UHD | 86UA8050PSA.AWCQ",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "86\"",
+      "price": 5399900.0,
+      "currency": "COP",
+      "description": "LG - Televisor | 86 pulgadas LED 4K UHD | 86UA8050PSA.AWCQ",
+      "specifications": {
+        "screen_size": "86\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73324101_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73324101_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73324101/Televisor-LG-86-pulgadas-LED-4K-UHD-86UA8050PSA.AWCQ/73324101?sponsoredClickData=%257B%2522isXLP%2522%253Atrue%252C%2522pageType%2522%253A%2522search%2522%252C%2522adType%2522%253A%2522products%2522%252C%2522platform%2522%253A%2522desktop%2522%252C%2522regionCode%2522%253A%2522co%2522%252C%2522context%2522%253A%257B%2522userIdentifier%2522%253A%2522MTc1NTU2NTQ5MzE4Nw%253D%253D%2522%252C%2522adIdentifier%2522%253A%2522v2_vyefQeV6EJ7HE9tzdBLmIB0tN2SIXmQ1UVa3-sNrExVdc86YzO_WmD9mIyXdbZ6oQMrlg5CJnsztHrHsJLrUmxAd7_Ys0IWQAKJ6CazfUqTKk36SzJGZyKfWW6im1fhbQZ6rY6QOmSD0SACvljLbAVfBhpj8XY50cuewWL3hRcQ%253D_ark198bfd054d17f7d764%2522%252C%2522slot%2522%253A8%252C%2522signal%2522%253A%2522Televisores%2522%252C%2522providerName%2522%253A%2522mabaya%2522%257D%257D",
+        "scraped_at": "2025-08-18T20:07:40.318000",
+        "last_updated": "2025-08-18T20:38:13.548000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_9",
+      "product_id": "falabella_9",
+      "name": "CAIXUN - Televisor | 40 pulgadas LED FHD | C40VAFG",
+      "brand": "CAIXUN",
+      "category": "Televisores",
+      "subcategory": "40\"",
+      "price": 699900.0,
+      "currency": "COP",
+      "description": "CAIXUN - Televisor | 40 pulgadas LED FHD | C40VAFG",
+      "specifications": {
+        "screen_size": "40\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/69522013_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/69522013_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/69522013/Televisor-Caixun-40-pulgadas-LED-FHD-C40VAFG/69522013",
+        "scraped_at": "2025-08-18T20:07:40.334000",
+        "last_updated": "2025-08-18T20:38:14.427000"
+      },
+      "ratings": {
+        "average_rating": 175.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_10",
+      "product_id": "falabella_10",
+      "name": "SAMSUNG - Televisor | 70 pulgadas Crystal UHD 4K HDR | UN70DU7000KXZL",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "70\"",
+      "price": 2999900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor | 70 pulgadas Crystal UHD 4K HDR | UN70DU7000KXZL",
+      "specifications": {
+        "screen_size": "70\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/72923118_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/72923118_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/72923118/Televisor-Samsung-70-pulgadas-Crystal-UHD-4K-HDR-UN70DU7000KXZL/72923118",
+        "scraped_at": "2025-08-18T20:07:40.350000",
+        "last_updated": "2025-08-18T20:38:15.229000"
+      },
+      "ratings": {
+        "average_rating": 64.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_11",
+      "product_id": "falabella_11",
+      "name": "SAMSUNG - Combo Televisor + Barra | 65 pulgadas QLED 4K QN65Q60 | Barra de sonido HWC400",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 2899900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Combo Televisor + Barra | 65 pulgadas QLED 4K QN65Q60 | Barra de sonido HWC400",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73300170_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73300170_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73300170/Combo-Televisor-+-Barra-Samsung-65-pulgadas-QLED-4K-QN65Q60-Barra-de-sonido-HWC400/73300170",
+        "scraped_at": "2025-08-18T20:07:40.365000",
+        "last_updated": "2025-08-18T20:38:16.055000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_12",
+      "product_id": "falabella_12",
+      "name": "JVC - Televisor LED 58 pulgadas Frameless Multituner 4K UHD HDR Google TV OS",
+      "brand": "JVC",
+      "category": "Televisores",
+      "subcategory": "58\"",
+      "price": 1499900.0,
+      "currency": "COP",
+      "description": "JVC - Televisor LED 58 pulgadas Frameless Multituner 4K UHD HDR Google TV OS",
+      "specifications": {
+        "screen_size": "58\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73174035_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73174035_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73174035/Televisor-LED-JVC-58-pulgadas-Frameless-Multituner-4K-UHD-HDR-Google-TV-OS/73174035",
+        "scraped_at": "2025-08-18T20:07:40.380000",
+        "last_updated": "2025-08-18T20:38:16.869000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_13",
+      "product_id": "falabella_13",
+      "name": "LG - Televisor 50 Pulgadas 4K LED Smart Tv 50UT",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1519900.0,
+      "currency": "COP",
+      "description": "LG - Televisor 50 Pulgadas 4K LED Smart Tv 50UT",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/140347757_071/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/140347757_071/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/140347756/Televisor-LG-50-Pulgadas-4K-LED-Smart-Tv-50UT/140347757",
+        "scraped_at": "2025-08-18T20:07:40.394000",
+        "last_updated": "2025-08-18T20:38:17.667000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_14",
+      "product_id": "falabella_14",
+      "name": "LG - Televisor OLED | 77 pulgadas 4K Ultra HD | Smart TV",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "77\"",
+      "price": 9299900.0,
+      "currency": "COP",
+      "description": "LG - Televisor OLED | 77 pulgadas 4K Ultra HD | Smart TV",
+      "specifications": {
+        "screen_size": "77\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/72924119_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/72924119_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/72924119/Televisor-LG-OLED-77-pulgadas-4K-Ultra-HD-Smart-TV/72924119",
+        "scraped_at": "2025-08-18T20:07:40.410000",
+        "last_updated": "2025-08-18T20:38:18.496000"
+      },
+      "ratings": {
+        "average_rating": 66.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_15",
+      "product_id": "falabella_15",
+      "name": "SAMSUNG - Televisor I I 43 I Pulgadas I UN43DU7000 I Led I Crystal I UHD I 4K I TDT",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "N/A",
+      "price": 1229900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor I I 43 I Pulgadas I UN43DU7000 I Led I Crystal I UHD I 4K I TDT",
+      "specifications": {
+        "screen_size": "N/A",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/133940176_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/133940176_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/133940175/Televisor-I-Samsung-I-43-I-Pulgadas-I-UN43DU7000-I-Led-I-Crystal-I-UHD-I-4K-I-TDT/133940176",
+        "scraped_at": "2025-08-18T20:07:40.426000",
+        "last_updated": "2025-08-18T20:38:19.303000"
+      },
+      "ratings": {
+        "average_rating": 19.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_16",
+      "product_id": "falabella_16",
+      "name": "HISENSE - Combo Televisor + Barra | 55 Pulgadas QLED 4K 55Q6QV | Barra de Sonido HS1000",
+      "brand": "HISENSE",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1899900.0,
+      "currency": "COP",
+      "description": "HISENSE - Combo Televisor + Barra | 55 Pulgadas QLED 4K 55Q6QV | Barra de Sonido HS1000",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73306414_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73306414_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73306414/Combo-Televisor-+-Barra-Hisense-55-Pulgadas-QLED-4K-55Q6QV-Barra-de-Sonido-HS1000/73306414",
+        "scraped_at": "2025-08-18T20:07:40.440000",
+        "last_updated": "2025-08-18T20:38:20.157000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_17",
+      "product_id": "falabella_17",
+      "name": "LG - Televisor | | 43 pulgadas | 4K Ultra HD | NANO CELL | 43NANO80ASAAWC",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "43\"",
+      "price": 1499900.0,
+      "currency": "COP",
+      "description": "LG - Televisor | | 43 pulgadas | 4K Ultra HD | NANO CELL | 43NANO80ASAAWC",
+      "specifications": {
+        "screen_size": "43\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73288678_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73288678_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73288678/Televisor-LG-43-pulgadas-4K-Ultra-HD-NANO-CELL-43NANO80ASAAWC/73288678",
+        "scraped_at": "2025-08-18T20:07:40.455000",
+        "last_updated": "2025-08-18T20:38:20.985000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_18",
+      "product_id": "falabella_18",
+      "name": "LG - Televisor | 55 pulgadas LED 4K UHD | 55UA7300PSB.AWCQ",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1849900.0,
+      "currency": "COP",
+      "description": "LG - Televisor | 55 pulgadas LED 4K UHD | 55UA7300PSB.AWCQ",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73297995_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73297995_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73297995/Televisor-LG-55-pulgadas-LED-4K-UHD-55UA7300PSB.AWCQ/73297995",
+        "scraped_at": "2025-08-18T20:07:40.470000",
+        "last_updated": "2025-08-18T20:38:21.792000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_19",
+      "product_id": "falabella_19",
+      "name": "SAMSUNG - Televisor 65 Pulgadas 4K-UHD LED Smart 65DU7000",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 2505900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor 65 Pulgadas 4K-UHD LED Smart 65DU7000",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/135654923_0411/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/135654923_0411/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/135654922/Televisor-SAMSUNG-65-Pulgadas-4K-UHD-LED-Smart-65DU7000/135654923",
+        "scraped_at": "2025-08-18T20:07:40.485000",
+        "last_updated": "2025-08-18T20:38:22.583000"
+      },
+      "ratings": {
+        "average_rating": 13.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_20",
+      "product_id": "falabella_20",
+      "name": "JVC - Televisor | 55 pulgadas 4K UHD LED | LT-55KD608",
+      "brand": "JVC",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1399900.0,
+      "currency": "COP",
+      "description": "JVC - Televisor | 55 pulgadas 4K UHD LED | LT-55KD608",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73170173_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73170173_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73170173/Televisor-JVC-55-pulgadas-4K-UHD-LED-LT-55KD608/73170173",
+        "scraped_at": "2025-08-18T20:07:40.499000",
+        "last_updated": "2025-08-18T20:38:23.373000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_21",
+      "product_id": "falabella_21",
+      "name": "JVC - Televisor | 32 pulgadas LED HD | LT-32KM148",
+      "brand": "JVC",
+      "category": "Televisores",
+      "subcategory": "32\"",
+      "price": 599900.0,
+      "currency": "COP",
+      "description": "JVC - Televisor | 32 pulgadas LED HD | LT-32KM148",
+      "specifications": {
+        "screen_size": "32\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73021809_001/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73021809_001/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73021809/Televisor-JVC-32-pulgadas-LED-HD-LT-32KM148/73021809",
+        "scraped_at": "2025-08-18T20:07:40.515000",
+        "last_updated": "2025-08-18T20:38:24.174000"
+      },
+      "ratings": {
+        "average_rating": 22.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_22",
+      "product_id": "falabella_22",
+      "name": "CHALLENGER - Televisor 43 Pulgadas Smart Google TV TG81",
+      "brand": "CHALLENGER",
+      "category": "Televisores",
+      "subcategory": "43\"",
+      "price": 949900.0,
+      "currency": "COP",
+      "description": "CHALLENGER - Televisor 43 Pulgadas Smart Google TV TG81",
+      "specifications": {
+        "screen_size": "43\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/142060216_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/142060216_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/142060215/Televisor-43-Pulgadas-Smart-Google-TV-TG81-Challenger/142060216",
+        "scraped_at": "2025-08-18T20:07:40.531000",
+        "last_updated": "2025-08-18T20:38:24.970000"
+      },
+      "ratings": {
+        "average_rating": 2.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_23",
+      "product_id": "falabella_23",
+      "name": "CAIXUN - Televisor 50 pulgadas 4K Ultra HD Smart TV",
+      "brand": "CAIXUN",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1199900.0,
+      "currency": "COP",
+      "description": "CAIXUN - Televisor 50 pulgadas 4K Ultra HD Smart TV",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/72784156_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/72784156_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/72784156/Televisor-Caixun-50-pulgadas-4K-Ultra-HD-Smart-TV/72784156",
+        "scraped_at": "2025-08-18T20:07:40.547000",
+        "last_updated": "2025-08-18T20:38:25.765000"
+      },
+      "ratings": {
+        "average_rating": 9.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_24",
+      "product_id": "falabella_24",
+      "name": "SAMSUNG - Televisor 55” Crystal DU7000 Smart 4K",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1719900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor 55” Crystal DU7000 Smart 4K",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/142807834_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/142807834_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/142807833/Televisor-Samsung-55%E2%80%9D-Crystal-DU7000-Smart-4K/142807834",
+        "scraped_at": "2025-08-18T20:07:40.564000",
+        "last_updated": "2025-08-18T20:38:26.600000"
+      },
+      "ratings": {
+        "average_rating": 29.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_25",
+      "product_id": "falabella_25",
+      "name": "HYUNDAI - Televisor Smart 43 FHD - Roku TV",
+      "brand": "HYUNDAI",
+      "category": "Televisores",
+      "subcategory": "N/A",
+      "price": 899900.0,
+      "currency": "COP",
+      "description": "HYUNDAI - Televisor Smart 43 FHD - Roku TV",
+      "specifications": {
+        "screen_size": "N/A",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/140682004_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/140682004_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/140682003/Televisor-Hyundai-Smart-43-FHD-Roku-TV/140682004",
+        "scraped_at": "2025-08-18T20:07:40.578000",
+        "last_updated": "2025-08-18T20:38:27.382000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_26",
+      "product_id": "falabella_26",
+      "name": "CHALLENGER - Televisor Smart Tv 65 Pulgadas Led Bluetooth - Uhd 65hw Smartbt",
+      "brand": "CHALLENGER",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 1377900.0,
+      "currency": "COP",
+      "description": "CHALLENGER - Televisor Smart Tv 65 Pulgadas Led Bluetooth - Uhd 65hw Smartbt",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/sodimacCO/716832_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/sodimacCO/716832_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/133954768/Televisor-Smart-Tv-65-Pulgadas-Led-Bluetooth-Uhd-65hw-Smartbt/133954820",
+        "scraped_at": "2025-08-18T20:07:40.594000",
+        "last_updated": "2025-08-18T20:38:28.195000"
+      },
+      "ratings": {
+        "average_rating": 3.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_27",
+      "product_id": "falabella_27",
+      "name": "LG - Televisor 55 Pulgadas Uhd 4k Smart Tv",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1739900.0,
+      "currency": "COP",
+      "description": "LG - Televisor 55 Pulgadas Uhd 4k Smart Tv",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/sodimacCO/654255_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/sodimacCO/654255_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/128168905/Televisor-Lg-55-Pulgadas-Uhd-4k-Smart-Tv/128168970",
+        "scraped_at": "2025-08-18T20:07:40.610000",
+        "last_updated": "2025-08-18T20:38:28.976000"
+      },
+      "ratings": {
+        "average_rating": 1.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_28",
+      "product_id": "falabella_28",
+      "name": "SAMSUNG - Televisor 50” QLED Q60D 4K Smart Tv",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1749900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor 50” QLED Q60D 4K Smart Tv",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/142866781_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/142866781_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/142866779/Televisor-Samsung-50%E2%80%9D-QLED-Q60D-4K-Smart-Tv/142866781",
+        "scraped_at": "2025-08-18T20:07:40.625000",
+        "last_updated": "2025-08-18T20:38:29.775000"
+      },
+      "ratings": {
+        "average_rating": 7.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_29",
+      "product_id": "falabella_29",
+      "name": "TCL - Televisor | 65 pulgadas | 4K UHD | QLED | 65P7K",
+      "brand": "TCL",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 2299900.0,
+      "currency": "COP",
+      "description": "TCL - Televisor | 65 pulgadas | 4K UHD | QLED | 65P7K",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73290082_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73290082_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73290082/Televisor-TCL-65-pulgadas-4K-UHD-QLED-65P7K/73290082?sponsoredClickData=%257B%2522isXLP%2522%253Atrue%252C%2522pageType%2522%253A%2522search%2522%252C%2522adType%2522%253A%2522products%2522%252C%2522platform%2522%253A%2522desktop%2522%252C%2522regionCode%2522%253A%2522co%2522%252C%2522context%2522%253A%257B%2522userIdentifier%2522%253A%2522MTc1NTU2NTQ5MzE4Nw%253D%253D%2522%252C%2522adIdentifier%2522%253A%2522v2_4wFBAWstD2UrfcleIUS0hR0tN2SIXmQ1UVa3-sNrExVdc86YzO_WmD9mIyXdbZ6ozTGtDkZJY8yPKO8wdCW32AFtH-PDGsmWatpp4IEHyuzQcgCys5ZP5BUeRZc9NhtfQZ6rY6QOmSD0SACvljLbAVfBhpj8XY50cuewWL3hRcQ%253D_ark198bfd054d17f7d764%2522%252C%2522slot%2522%253A29%252C%2522signal%2522%253A%2522Televisores%2522%252C%2522providerName%2522%253A%2522mabaya%2522%257D%257D",
+        "scraped_at": "2025-08-18T20:07:40.640000",
+        "last_updated": "2025-08-18T20:38:30.633000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_30",
+      "product_id": "falabella_30",
+      "name": "SAMSUNG - Televisor TV 50\" QLED 4K QN50Q7FAAKXZL",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1899900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor TV 50\" QLED 4K QN50Q7FAAKXZL",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73298017_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73298017_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73298017/Televisor-TV-SAMSUNG-50-QLED-4K-QN50Q7FAAKXZL/73298017?sponsoredClickData=%257B%2522isXLP%2522%253Atrue%252C%2522pageType%2522%253A%2522search%2522%252C%2522adType%2522%253A%2522products%2522%252C%2522platform%2522%253A%2522desktop%2522%252C%2522regionCode%2522%253A%2522co%2522%252C%2522context%2522%253A%257B%2522userIdentifier%2522%253A%2522MTc1NTU2NTQ5MzE4Nw%253D%253D%2522%252C%2522adIdentifier%2522%253A%2522v2_o797wQCleigjETgD5-itTR0tN2SIXmQ1UVa3-sNrExVdc86YzO_WmD9mIyXdbZ6oLGb0nsRiz8N8HtM58FP9AlwQtDHsKi4dNe-h2-tSnnNJLfxYlsEZ5ZweRpBzCL5rQZ6rY6QOmSD0SACvljLbAVfBhpj8XY50cuewWL3hRcQ%253D_ark198bfd054d17f7d764%2522%252C%2522slot%2522%253A30%252C%2522signal%2522%253A%2522Televisores%2522%252C%2522providerName%2522%253A%2522mabaya%2522%257D%257D",
+        "scraped_at": "2025-08-18T20:07:40.654000",
+        "last_updated": "2025-08-18T20:38:31.484000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_31",
+      "product_id": "falabella_31",
+      "name": "SAMSUNG - Televisor TV 50\" QLED 4K QN50Q7FAAKXZL",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1899900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor TV 50\" QLED 4K QN50Q7FAAKXZL",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73298017_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73298017_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73298017/Televisor-TV-SAMSUNG-50-QLED-4K-QN50Q7FAAKXZL/73298017",
+        "scraped_at": "2025-08-18T20:07:40.669000",
+        "last_updated": "2025-08-18T20:38:32.285000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_32",
+      "product_id": "falabella_32",
+      "name": "HISENSE - Televisor |  65 Pulgadas |  QLED 4K Dolby Vision | 65Q6QV",
+      "brand": "HISENSE",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 2249900.0,
+      "currency": "COP",
+      "description": "HISENSE - Televisor |  65 Pulgadas |  QLED 4K Dolby Vision | 65Q6QV",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73261427_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73261427_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73261427/Televisor-Hisense-65-Pulgadas-QLED-4K-Dolby-Vision-65Q6QV/73261427",
+        "scraped_at": "2025-08-18T20:07:40.684000",
+        "last_updated": "2025-08-18T20:38:33.134000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_33",
+      "product_id": "falabella_33",
+      "name": "JVC - Televisor LED 70 pulgadas Frameless Multituner 4K UHD HDR Google TV OS",
+      "brand": "JVC",
+      "category": "Televisores",
+      "subcategory": "70\"",
+      "price": 2399900.0,
+      "currency": "COP",
+      "description": "JVC - Televisor LED 70 pulgadas Frameless Multituner 4K UHD HDR Google TV OS",
+      "specifications": {
+        "screen_size": "70\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73174039_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73174039_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73174039/Televisor-LED-JVC-70-pulgadas-Frameless-Multituner-4K-UHD-HDR-Google-TV-OS/73174039",
+        "scraped_at": "2025-08-18T20:07:40.699000",
+        "last_updated": "2025-08-18T20:38:33.934000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_34",
+      "product_id": "falabella_34",
+      "name": "LG - Televisor 50 Pulgadas Smart Tv 4K UHD 50UR",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1599900.0,
+      "currency": "COP",
+      "description": "LG - Televisor 50 Pulgadas Smart Tv 4K UHD 50UR",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/123352592_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/123352592_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/123352591/Televisor-LG-50-Pulgadas-Smart-Tv-4K-UHD-50UR/123352592",
+        "scraped_at": "2025-08-18T20:07:40.713000",
+        "last_updated": "2025-08-18T20:38:34.727000"
+      },
+      "ratings": {
+        "average_rating": 86.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_35",
+      "product_id": "falabella_35",
+      "name": "LG - Televisor 50 Pulgadas 4K UHD LED Smart TV 50UT",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1569900.0,
+      "currency": "COP",
+      "description": "LG - Televisor 50 Pulgadas 4K UHD LED Smart TV 50UT",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/141426988_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/141426988_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/141426987/Televisor-LG-50-Pulgadas-4K-UHD-LED-Smart-TV-50UT/141426988",
+        "scraped_at": "2025-08-18T20:07:40.728000",
+        "last_updated": "2025-08-18T20:38:35.519000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_36",
+      "product_id": "falabella_36",
+      "name": "LG - Televisor 50\" 4k Uhd Led Smart Tv 50ur7410 Negro",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1539900.0,
+      "currency": "COP",
+      "description": "LG - Televisor 50\" 4k Uhd Led Smart Tv 50ur7410 Negro",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/sodimacCO/733316_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/sodimacCO/733316_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/137278634/Televisor-Lg-50-4k-Uhd-Led-Smart-Tv-50ur7410-Negro/137278635",
+        "scraped_at": "2025-08-18T20:07:40.743000",
+        "last_updated": "2025-08-18T20:38:36.350000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_37",
+      "product_id": "falabella_37",
+      "name": "LG - Televisor 55 Pulgadas 4K UHD Smart TV 55UT",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1709900.0,
+      "currency": "COP",
+      "description": "LG - Televisor 55 Pulgadas 4K UHD Smart TV 55UT",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/140349184_081/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/140349184_081/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/140349183/Televisor-LG-55-Pulgadas-4K-UHD-Smart-TV-55UT/140349184",
+        "scraped_at": "2025-08-18T20:07:40.757000",
+        "last_updated": "2025-08-18T20:38:37.144000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_38",
+      "product_id": "falabella_38",
+      "name": "SAMSUNG - Televisor 40 Full HD Smart Tv UN40T5290AKXZL",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "N/A",
+      "price": 1089900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor 40 Full HD Smart Tv UN40T5290AKXZL",
+      "specifications": {
+        "screen_size": "N/A",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/143992754_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/143992754_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/143992753/Samsung-Televisor-40-Full-HD-Smart-Tv-UN40T5290AKXZL/143992754",
+        "scraped_at": "2025-08-18T20:07:40.772000",
+        "last_updated": "2025-08-18T20:38:37.972000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_39",
+      "product_id": "falabella_39",
+      "name": "SAMSUNG - Televisor 40” Smart TV Full HD UN40F6000FKXZL",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "40\"",
+      "price": 1306900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor 40” Smart TV Full HD UN40F6000FKXZL",
+      "specifications": {
+        "screen_size": "40\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/144594121_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/144594121_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/144594120/Televisor-Samsung-40%E2%80%9D-Smart-TV-Full-HD-UN40F6000FKXZL/144594121",
+        "scraped_at": "2025-08-18T20:07:40.787000",
+        "last_updated": "2025-08-18T20:38:38.797000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_40",
+      "product_id": "falabella_40",
+      "name": "SAMSUNG - TELEVISOR 43 CRYSTAL UHD SMART TV 4K UN43DU7000KXZL",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "N/A",
+      "price": 1629900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - TELEVISOR 43 CRYSTAL UHD SMART TV 4K UN43DU7000KXZL",
+      "specifications": {
+        "screen_size": "N/A",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/141338149_04/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/141338149_04/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/141338148/TELEVISOR-SAMSUNG-43-CRYSTAL-UHD-SMART-TV-4K-UN43DU7000KXZL/141338149",
+        "scraped_at": "2025-08-18T20:07:40.802000",
+        "last_updated": "2025-08-18T20:38:39.596000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_41",
+      "product_id": "falabella_41",
+      "name": "SAMSUNG - Televisor 70DU7000 70 Pulgadas 4K Smart TV",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "70\"",
+      "price": 2899900.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor 70DU7000 70 Pulgadas 4K Smart TV",
+      "specifications": {
+        "screen_size": "70\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/141167829_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/141167829_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/141167828/Televisor-Samsung-70DU7000-70-Pulgadas-4K-Smart-TV/141167829",
+        "scraped_at": "2025-08-18T20:07:40.816000",
+        "last_updated": "2025-08-18T20:38:40.387000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_42",
+      "product_id": "falabella_42",
+      "name": "SAMSUNG - Televisor 65 Pulgadas LED Uhd4K Smart TV UN65CU7000KXZL",
+      "brand": "SAMSUNG",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 2445990.0,
+      "currency": "COP",
+      "description": "SAMSUNG - Televisor 65 Pulgadas LED Uhd4K Smart TV UN65CU7000KXZL",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/132451189_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/132451189_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/132451188/Televisor-SAMSUNG-65-Pulgadas-LED-Uhd4K-Smart-TV-UN65CU7000KXZL/132451189",
+        "scraped_at": "2025-08-18T20:07:40.831000",
+        "last_updated": "2025-08-18T20:38:41.193000"
+      },
+      "ratings": {
+        "average_rating": 3.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_43",
+      "product_id": "falabella_43",
+      "name": "LG - Televisor 43 Pulgadas Smart Tv Full HD 43LM",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "43\"",
+      "price": 1210900.0,
+      "currency": "COP",
+      "description": "LG - Televisor 43 Pulgadas Smart Tv Full HD 43LM",
+      "specifications": {
+        "screen_size": "43\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/123353185_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/123353185_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/123353184/Televisor-LG-43-Pulgadas-Smart-Tv-Full-HD-43LM/123353185",
+        "scraped_at": "2025-08-18T20:07:40.847000",
+        "last_updated": "2025-08-18T20:38:42.049000"
+      },
+      "ratings": {
+        "average_rating": 32.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_44",
+      "product_id": "falabella_44",
+      "name": "LG - Televisor 65 Pulgadas 4K UHD LED Smart TV 65UT",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 2429900.0,
+      "currency": "COP",
+      "description": "LG - Televisor 65 Pulgadas 4K UHD LED Smart TV 65UT",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/140351165_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/140351165_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/140351163/Televisor-LG-65-Pulgadas-4K-UHD-LED-Smart-TV-65UT/140351165",
+        "scraped_at": "2025-08-18T20:07:40.862000",
+        "last_updated": "2025-08-18T20:38:42.841000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_45",
+      "product_id": "falabella_45",
+      "name": "LG - Televisor OLED | 65 pulgadas 4K Ultra HD | Smart TV",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 9299900.0,
+      "currency": "COP",
+      "description": "LG - Televisor OLED | 65 pulgadas 4K Ultra HD | Smart TV",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/72924118_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/72924118_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/72924118/Televisor-LG-OLED-65-pulgadas-4K-Ultra-HD-Smart-TV/72924118",
+        "scraped_at": "2025-08-18T20:07:40.878000",
+        "last_updated": "2025-08-18T20:38:43.647000"
+      },
+      "ratings": {
+        "average_rating": 14.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_46",
+      "product_id": "falabella_46",
+      "name": "LG - Televisor 43 Pulgadas LED FHD Smart Tv Negro 43LM6370PDB",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "43\"",
+      "price": 1205000.0,
+      "currency": "COP",
+      "description": "LG - Televisor 43 Pulgadas LED FHD Smart Tv Negro 43LM6370PDB",
+      "specifications": {
+        "screen_size": "43\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/118283101_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/118283101_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/118283100/Televisor-LG-43-Pulgadas-LED-FHD-Smart-Tv-Negro-43LM6370PDB/118283101",
+        "scraped_at": "2025-08-18T20:07:40.894000",
+        "last_updated": "2025-08-18T20:38:44.463000"
+      },
+      "ratings": {
+        "average_rating": 38.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_47",
+      "product_id": "falabella_47",
+      "name": "LG - Televisor | 65 pulgadas LED 4K UHD | 65UT8050PSB",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 2449900.0,
+      "currency": "COP",
+      "description": "LG - Televisor | 65 pulgadas LED 4K UHD | 65UT8050PSB",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73007262_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73007262_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73007262/Televisor-LG-65-pulgadas-LED-4K-UHD-65UT8050PSB/73007262",
+        "scraped_at": "2025-08-18T20:07:40.910000",
+        "last_updated": "2025-08-18T20:38:45.265000"
+      },
+      "ratings": {
+        "average_rating": 35.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_48",
+      "product_id": "falabella_48",
+      "name": "LG - Televisor 50 Pulgadas Smart Tv 4K UHD LED 50UR",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1639900.0,
+      "currency": "COP",
+      "description": "LG - Televisor 50 Pulgadas Smart Tv 4K UHD LED 50UR",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/135776949_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/135776949_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/135776948/Televisor-LG-50-Pulgadas-Smart-Tv-4K-UHD-LED-50UR/135776949",
+        "scraped_at": "2025-08-18T20:07:40.925000",
+        "last_updated": "2025-08-18T20:38:46.148000"
+      },
+      "ratings": {
+        "average_rating": 6.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_49",
+      "product_id": "falabella_49",
+      "name": "LG - Televisor 43\" 43LM6370PDB Smart TV Full HD Led Bluetooth",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "43\"",
+      "price": 1224388.0,
+      "currency": "COP",
+      "description": "LG - Televisor 43\" 43LM6370PDB Smart TV Full HD Led Bluetooth",
+      "specifications": {
+        "screen_size": "43\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/123537244_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/123537244_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/123537243/Televisor-43-Lg-43LM6370PDB-Smart-TV-Full-HD-Led-Bluetooth/123537244",
+        "scraped_at": "2025-08-18T20:07:40.941000",
+        "last_updated": "2025-08-18T20:38:46.944000"
+      },
+      "ratings": {
+        "average_rating": 32.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_50",
+      "product_id": "falabella_50",
+      "name": "JVC - Televisor LED 50 Pulgadas Frameless Multituner 4K UHD HDR Google TV OS",
+      "brand": "JVC",
+      "category": "Televisores",
+      "subcategory": "50\"",
+      "price": 1299900.0,
+      "currency": "COP",
+      "description": "JVC - Televisor LED 50 Pulgadas Frameless Multituner 4K UHD HDR Google TV OS",
+      "specifications": {
+        "screen_size": "50\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73174034_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73174034_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73174034/Televisor-LED-JVC-50-Pulgadas-Frameless-Multituner-4K-UHD-HDR-Google-TV-OS/73174034",
+        "scraped_at": "2025-08-18T20:07:40.955000",
+        "last_updated": "2025-08-18T20:38:47.782000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_51",
+      "product_id": "falabella_51",
+      "name": "IFFALCON - Televisor (By TCL) | 55 Pulgadas 4K UHD | 55U65 Google TV",
+      "brand": "IFFALCON",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1399900.0,
+      "currency": "COP",
+      "description": "IFFALCON - Televisor (By TCL) | 55 Pulgadas 4K UHD | 55U65 Google TV",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73316262_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73316262_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73316262/Televisor-iFFALCON-(By-TCL)-55-Pulgadas-4K-UHD-55U65-Google-TV/73316262",
+        "scraped_at": "2025-08-18T20:07:40.979000",
+        "last_updated": "2025-08-18T20:38:48.693000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_52",
+      "product_id": "falabella_52",
+      "name": "JVC - Televisor | 65 pulgadas LED 4K UHD | LT-65KM548",
+      "brand": "JVC",
+      "category": "Televisores",
+      "subcategory": "65\"",
+      "price": 1999900.0,
+      "currency": "COP",
+      "description": "JVC - Televisor | 65 pulgadas LED 4K UHD | LT-65KM548",
+      "specifications": {
+        "screen_size": "65\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73174037_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73174037_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73174037/Televisor-JVC-65-pulgadas-LED-4K-UHD-LT-65KM548/73174037",
+        "scraped_at": "2025-08-18T20:07:40.998000",
+        "last_updated": "2025-08-18T20:38:49.621000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_53",
+      "product_id": "falabella_53",
+      "name": "LG - Televisor | 86 pulgadas LED 4K UHD | 86UA8050PSA.AWCQ",
+      "brand": "LG",
+      "category": "Televisores",
+      "subcategory": "86\"",
+      "price": 5399900.0,
+      "currency": "COP",
+      "description": "LG - Televisor | 86 pulgadas LED 4K UHD | 86UA8050PSA.AWCQ",
+      "specifications": {
+        "screen_size": "86\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/73324101_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/73324101_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/73324101/Televisor-LG-86-pulgadas-LED-4K-UHD-86UA8050PSA.AWCQ/73324101",
+        "scraped_at": "2025-08-18T20:07:41.013000",
+        "last_updated": "2025-08-18T20:38:50.476000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_54",
+      "product_id": "falabella_54",
+      "name": "CAIXUN - Televisor 55 pulgadas 4K Ultra HD Smart TV",
+      "brand": "CAIXUN",
+      "category": "Televisores",
+      "subcategory": "55\"",
+      "price": 1399900.0,
+      "currency": "COP",
+      "description": "CAIXUN - Televisor 55 pulgadas 4K Ultra HD Smart TV",
+      "specifications": {
+        "screen_size": "55\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/72784154_1/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/72784154_1/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/72784154/Televisor-Caixun-55-pulgadas-4K-Ultra-HD-Smart-TV/72784154",
+        "scraped_at": "2025-08-18T20:07:41.029000",
+        "last_updated": "2025-08-18T20:38:51.321000"
+      },
+      "ratings": {
+        "average_rating": 10.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_55",
+      "product_id": "falabella_55",
+      "name": "XIAOMI - Televisor - 32 Pulgadas - LED - Mi TV P1",
+      "brand": "XIAOMI",
+      "category": "Televisores",
+      "subcategory": "32\"",
+      "price": 649900.0,
+      "currency": "COP",
+      "description": "XIAOMI - Televisor - 32 Pulgadas - LED - Mi TV P1",
+      "specifications": {
+        "screen_size": "32\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/143773919_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/143773919_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/143773918/Televisor-Xiaomi-32-Pulgadas-LED-Mi-TV-P1/143773919?sponsoredClickData=%257B%2522isXLP%2522%253Atrue%252C%2522pageType%2522%253A%2522search%2522%252C%2522adType%2522%253A%2522products%2522%252C%2522platform%2522%253A%2522desktop%2522%252C%2522regionCode%2522%253A%2522co%2522%252C%2522context%2522%253A%257B%2522userIdentifier%2522%253A%2522MTc1NTU2NTQ5MzE4Nw%253D%253D%2522%252C%2522adIdentifier%2522%253A%2522v2_OJHZUeHgeWKvb0dIKhW9n-Trr1ATBn87F-_oGD7WlRxdc86YzO_WmD9mIyXdbZ6ot_jnjwtN5rg9kmMSLiBwK5kN0kHenW8fLIZ0nEn3Iqm1q4JXJvbwwG8IMWU5mnyiOREnWo0qyRZY0hyWfjLdxlfBhpj8XY50cuewWL3hRcQ%253D_ark198bfd054d17f7d764%2522%252C%2522slot%2522%253A55%252C%2522signal%2522%253A%2522Televisores%2522%252C%2522providerName%2522%253A%2522mabaya%2522%257D%257D",
+        "scraped_at": "2025-08-18T20:07:41.044000",
+        "last_updated": "2025-08-18T20:38:52.172000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "falabella_56",
+      "product_id": "falabella_56",
+      "name": "CHALLENGER - Televisor 32 Pulgadas LED",
+      "brand": "CHALLENGER",
+      "category": "Televisores",
+      "subcategory": "32\"",
+      "price": 539900.0,
+      "currency": "COP",
+      "description": "CHALLENGER - Televisor 32 Pulgadas LED",
+      "specifications": {
+        "screen_size": "32\"",
+        "category": "Televisores"
+      },
+      "image_urls": {
+        "main": "https://media.falabella.com.co/falabellaCO/140687393_01/width=240,height=240,quality=70,format=webp,fit=pad",
+        "thumbnail": "https://media.falabella.com.co/falabellaCO/140687393_01/width=240,height=240,quality=70,format=webp,fit=pad"
+      },
+      "source_info": {
+        "store_name": "Falabella",
+        "store_url": "https://www.falabella.com.co/falabella-co/product/140687391/Televisor-32-Pulgadas-LED-Challenger/140687393?sponsoredClickData=%257B%2522isXLP%2522%253Atrue%252C%2522pageType%2522%253A%2522search%2522%252C%2522adType%2522%253A%2522products%2522%252C%2522platform%2522%253A%2522desktop%2522%252C%2522regionCode%2522%253A%2522co%2522%252C%2522context%2522%253A%257B%2522userIdentifier%2522%253A%2522MTc1NTU2NTQ5MzE4Nw%253D%253D%2522%252C%2522adIdentifier%2522%253A%2522v2_-iZiKYQUlEbIruidJ8Ixv7gkIO94QWHDXhrxw2QA8Gxdc86YzO_WmD9mIyXdbZ6oVDzLwxhI-P3Um6Uj0-vmskPTnIeLDaAkhDW8RGVi9oV4l5fnCluYDvcRgPLpXadqQj-hjiQSHuTBrejZWz2KI1fBhpj8XY50cuewWL3hRcQ%253D_ark198bfd054d17f7d764%2522%252C%2522slot%2522%253A56%252C%2522signal%2522%253A%2522Televisores%2522%252C%2522providerName%2522%253A%2522mabaya%2522%257D%257D",
+        "scraped_at": "2025-08-18T20:07:41.058000",
+        "last_updated": "2025-08-18T20:38:52.966000"
+      },
+      "ratings": {
+        "average_rating": 0.0,
+        "review_count": 0
+      },
+      "extraction_metadata": {
+        "extraction_status": "success",
+        "pagina": 1
+      }
+    },
+    {
+      "_id": "alkosto.com_12",
+      "product_id": "alkosto.com_12",
+      "contador_extraccion_total": 12,
+      "contador_extraccion": 12,
+      "name": "TV KALLEY 60\" Pulgadas 152.4 cm 60G300 4K UHD LED Smart TV Google",
+      "brand": "KALLEY",
+      "category": "televisores",
+      "price_text": "COP 1,699,900",
+      "price_value": 1699900,
+      "currency": "COP",
+      "size": "60\"",
+      "rating": 4.9487,
+      "additional_details": "",
+      "source": "alkosto.com",
+      "image_url": "https://www.alkosto.com/medias/7705946480048-001-310Wx310H?context=bWFzdGVyfGltYWdlc3wxMTA2MHxpbWFnZS93ZWJwfGFHTmxMMmhoTlM4eE5UQXlPRGcxT1RnMk16QTNNQzgzTnpBMU9UUTJORGd3TURRNFh6QXdNVjh6TVRCWGVETXhNRWd8NzFlMTZjMGNlZWRhNjEzYjY4ZDYzYjk1MmIwMzU2NDAzZGE2MDcxOWFjMGQ0NDU2OGFlZWM2NjlkM2VjOGNkNg",
+      "product_link": "https://www.alkosto.com/tv-kalley-60-pulgadas-1524-cm-60g300-4k-uhd-led-smart-tv/p/7705946480048",
+      "page": 1,
+      "extraction_date": "2025-09-04T20:55:50",
+      "extraction_status": "OK",
+      "created_at": "2025-09-05T01:17:26.349000",
+      "updated_at": "2025-09-05T01:17:26.349000"
+    }
+  ]
+}
