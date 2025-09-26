@@ -6,6 +6,7 @@ from typing import Dict, Any, List, Optional
 from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure, DuplicateKeyError
 from dotenv import load_dotenv
+import hashlib
 
 # Configurar logging
 logging.basicConfig(
@@ -58,22 +59,37 @@ class MongoDBManager:
         except (ValueError, AttributeError):
             return 0.0
     
+    def calcular_hash_producto(self, producto: Dict[str, Any]) -> str:
+        """Generar hash único del producto basado en campos clave"""
+        campos_hash = [
+            producto.get('titulo', '').lower().strip(),
+            producto.get('marca', '').lower().strip(),
+            producto.get('fuente', '').lower().strip(),
+            str(producto.get('precio_valor', 0))
+    ]
+        hash_string = '|'.join(campos_hash)
+        return hashlib.sha256(hash_string.encode('utf-8')).hexdigest()
+    
     def save_product(self, producto: Dict[str, Any], collection_name: str = "products") -> bool:
         """
         Guardar producto en MongoDB
         """
         try:
             collection = self.get_collection(collection_name)
-            
+        
             # Generar ID único del producto basado en la fuente y contador
             fuente = producto.get('fuente', 'unknown')
             contador = producto.get('contador_extraccion', '')
             product_id = f"{fuente}_{contador}"
             
+            # Generar hash único del producto
+            product_hash = self.calcular_hash_producto(producto)
+            
             # Documento del producto basado en el formato proporcionado
             product_doc = {
                 "_id": product_id,
                 "product_id": product_id,
+                "product_hash": product_hash,
                 "contador_extraccion_total": producto.get('contador_extraccion_total', 0),
                 "contador_extraccion": producto.get('contador_extraccion', 0),
                 "name": producto.get('titulo', ''),
@@ -270,6 +286,9 @@ def main():
         logger.error(f"❌ Script failed: {e}")
     finally:
         uploader.close()
+        
+        
+        
 
 if __name__ == "__main__":
     main()

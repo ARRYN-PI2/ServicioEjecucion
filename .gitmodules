@@ -1,0 +1,9 @@
+[submodule "scrapers/exito"]
+	path = scrapers/exito
+	url = https://github.com/ARRYN-PI2/scrapper-exito.git
+[submodule "scrapers/alkosto"]
+	path = scrapers/alkosto
+	url = https://github.com/ARRYN-PI2/scrapper-alkosto.git
+[submodule "scrapers/falabella"]
+	path = scrapers/falabella
+	url = https://github.com/ARRYN-PI2/scrapper-falabella.git
