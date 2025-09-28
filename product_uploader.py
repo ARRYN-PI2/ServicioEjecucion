@@ -72,7 +72,14 @@ class MongoDBManager:
     
     def save_product(self, producto: Dict[str, Any], collection_name: str = "products") -> bool:
         """
-        Guardar producto en MongoDB
+        Guardar producto en MongoDB con propiedades en español (NUEVA IMPLEMENTACIÓN)
+        
+        Args:
+            producto: Diccionario con datos del producto usando nombres en español
+            collection_name: Nombre de la colección MongoDB
+            
+        Returns:
+            bool: True si el producto se guardó exitosamente
         """
         try:
             collection = self.get_collection(collection_name)
@@ -85,28 +92,34 @@ class MongoDBManager:
             # Generar hash único del producto
             product_hash = self.calcular_hash_producto(producto)
             
-            # Documento del producto basado en el formato proporcionado
+            # ✅ NUEVA IMPLEMENTACIÓN: Documento del producto con nombres EN ESPAÑOL
             product_doc = {
                 "_id": product_id,
                 "product_id": product_id,
                 "product_hash": product_hash,
+                
+                # Campos de control (sin cambios)
                 "contador_extraccion_total": producto.get('contador_extraccion_total', 0),
                 "contador_extraccion": producto.get('contador_extraccion', 0),
-                "name": producto.get('titulo', ''),
-                "brand": producto.get('marca', ''),
-                "category": producto.get('categoria', ''),
-                "price_text": producto.get('precio_texto', ''),
-                "price_value": producto.get('precio_valor', 0),
-                "currency": producto.get('moneda', 'COP'),
-                "size": producto.get('tamaño', ''),
-                "rating": self.parse_rating(producto.get('calificacion', '')),
-                "additional_details": producto.get('detalles_adicionales', ''),
-                "source": producto.get('fuente', ''),
-                "image_url": producto.get('imagen', ''),
-                "product_link": producto.get('link', ''),
-                "page": producto.get('pagina', 1),
-                "extraction_date": producto.get('fecha_extraccion', ''),
-                "extraction_status": producto.get('extraction_status', ''),
+                
+                # ✅ CAMPOS EN ESPAÑOL - Mapeo directo sin traducción
+                "titulo": producto.get('titulo', ''),                        # antes: "name" 
+                "marca": producto.get('marca', ''),                          # antes: "brand"
+                "categoria": producto.get('categoria', ''),                  # antes: "category"
+                "precio_texto": producto.get('precio_texto', ''),            # antes: "price_text"
+                "precio_valor": producto.get('precio_valor', 0),             # antes: "price_value"
+                "moneda": producto.get('moneda', 'COP'),                     # antes: "currency"
+                "tamaño": producto.get('tamaño', ''),                        # antes: "size"
+                "calificacion": self.parse_rating(producto.get('calificacion', '')),  # antes: "rating"
+                "detalles_adicionales": producto.get('detalles_adicionales', ''),     # antes: "additional_details"
+                "fuente": producto.get('fuente', ''),                        # antes: "source"
+                "imagen": producto.get('imagen', ''),                        # antes: "image_url"
+                "link": producto.get('link', ''),                            # antes: "product_link"
+                "pagina": producto.get('pagina', 1),                         # antes: "page"
+                "fecha_extraccion": producto.get('fecha_extraccion', ''),    # antes: "extraction_date"
+                "extraction_status": producto.get('extraction_status', ''), # mantiene nombre original
+                
+                # Timestamps de control (sin cambios)
                 "created_at": datetime.now(),
                 "updated_at": datetime.now()
             }
@@ -255,9 +268,16 @@ class ProductUploader:
 
 def main():
     """
-    Función principal para ejecutar el script desde línea de comandos
+    Función principal para ejecutar el script desde línea de comandos - CON OUTPUT VISIBLE
     """
     import argparse
+    
+    # ✅ FORZAR LOGGING VISIBLE
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        force=True
+    )
     
     parser = argparse.ArgumentParser(description='Upload products from JSON to MongoDB')
     parser.add_argument('--file', '-f', type=str, help='JSON file path to upload')
@@ -266,29 +286,50 @@ def main():
     args = parser.parse_args()
     
     if not args.file and not args.json:
-        logger.error("❌ Please provide either --file or --json parameter")
+        print("❌ Error: Please provide either --file or --json parameter")
+        logger.error("Please provide either --file or --json parameter")
         return
     
+    uploader = None
+    print("🚀 Starting product upload...")
+    
     try:
+        print("📡 Initializing connection to MongoDB...")
         uploader = ProductUploader()
+        print("✅ Connection established successfully")
         
         if args.file:
+            print(f"📂 Processing file: {args.file}")
             stats = uploader.upload_from_file(args.file)
         elif args.json:
+            print("📝 Processing JSON string...")
             stats = uploader.upload_from_json_string(args.json)
         
-        print(f"\n🎉 Upload Summary:")
-        print(f"   • Inserted: {stats['inserted']}")
-        print(f"   • Updated: {stats['updated']}")
-        print(f"   • Errors: {stats['errors']}")
+        print("\n" + "="*50)
+        print("🎉 UPLOAD COMPLETED SUCCESSFULLY")
+        print("="*50)
+        print(f"   📊 Products Inserted: {stats['inserted']}")
+        print(f"   🔄 Products Updated:  {stats['updated']}")
+        print(f"   ❌ Errors:           {stats['errors']}")
+        print("="*50)
+        
+        if stats['errors'] > 0:
+            print("⚠️  Some errors occurred during upload. Check logs above for details.")
+        else:
+            print("✅ All products processed successfully!")
         
     except Exception as e:
-        logger.error(f"❌ Script failed: {e}")
+        print(f"\n❌ SCRIPT FAILED: {e}")
+        logger.error(f"Script failed: {e}")
+        print("💡 Tip: Check your .env file and MongoDB connection")
+        return 1
+        
     finally:
-        uploader.close()
+        if uploader is not None:
+            print("🔌 Closing database connection...")
+            uploader.close()
+            print("👋 Process completed")
         
-        
-        
-
+    return 0
 if __name__ == "__main__":
     main()

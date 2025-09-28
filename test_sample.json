@@ -1,0 +1,21 @@
+[
+  {
+    "contador_extraccion_total": 1,
+    "contador_extraccion": 1,
+    "titulo": "SAMSUNG - Televisor | 55 pulgadas Crystal UHD 4K HDR Smart TV",
+    "marca": "SAMSUNG",
+    "precio_texto": "$ 1.699.900",
+    "precio_valor": 1699900,
+    "moneda": "COP",
+    "tamaño": "55\"",
+    "calificacion": "4.3",
+    "detalles_adicionales": "Pantalla Crystal UHD 4K con tecnología HDR",
+    "fuente": "test_scraper",
+    "categoria": "Televisores",
+    "imagen": "https://example.com/samsung-tv-55.jpg",
+    "link": "https://example.com/producto/samsung-tv-55",
+    "pagina": 1,
+    "fecha_extraccion": "2025-09-28T12:30:00.000000",
+    "extraction_status": "success"
+  }
+]
