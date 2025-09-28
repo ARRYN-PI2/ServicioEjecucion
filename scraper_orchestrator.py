@@ -38,8 +38,8 @@ class ScraperOrchestrator:
         """
         # Mapeo de rutas reales de los scrapers
         scraper_paths = {
-            'alkosto': self.scrapers_dir / 'alkosto',
-            'exito': self.scrapers_dir / 'exito',
+            'alkosto': self.scrapers_dir / 'alkosto' / 'alkosto_scraper',
+            'exito': self.scrapers_dir / 'exito' / 'exito_scraper',
             # 'falabella': pendiente cuando esté listo con main.py
         }
         
@@ -60,8 +60,7 @@ class ScraperOrchestrator:
             
             # Comando con ruta corregida - ejecutar desde directorio del scraper
             cmd = [
-                'python', '-m', 'alkosto_scraper.main',  # Para alkosto
-                '--categoria', 'televisores',
+                'python', 'main.py',
                 '--paginas', str(paginas),
                 '--output', str(output_file)
             ]
@@ -103,7 +102,7 @@ class ScraperOrchestrator:
             Diccionario con estadísticas de ejecución
         """
         if scrapers is None:
-            scrapers = ['alkosto', 'exito']  # Falabella omitido hasta que tenga main.py
+            scrapers = ['alkosto', 'exito', 'falabella']  # Todos los scrapers disponibles
             
         resultados = {
             'inicio': datetime.now().isoformat(),
@@ -155,9 +154,9 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description="Orchestrator de Scrapers ARRYN")
     parser.add_argument('--scrapers', nargs='+', 
-                       choices=['alkosto', 'exito'],  # Falabella removido temporalmente
-                       default=['alkosto', 'exito'],
-                       help='Scrapers a ejecutar (alkosto, exito)')
+                       choices=['alkosto', 'exito', 'falabella'],
+                       default=['alkosto', 'exito', 'falabella'],
+                       help='Scrapers a ejecutar (alkosto, exito, falabella)')
     parser.add_argument('--paginas', type=int, default=2,
                        help='Número de páginas por scraper (default: 2)')
     
