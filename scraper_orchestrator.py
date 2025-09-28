@@ -38,8 +38,8 @@ class ScraperOrchestrator:
         """
         # Mapeo de rutas reales de los scrapers
         scraper_paths = {
-            'alkosto': self.scrapers_dir / 'alkosto' / 'alkosto_scraper',
-            'exito': self.scrapers_dir / 'exito' / 'exito_scraper',
+            'alkosto': self.scrapers_dir / 'alkosto',
+            'exito': self.scrapers_dir / 'exito',
             # 'falabella': pendiente cuando esté listo con main.py
         }
         
@@ -60,7 +60,8 @@ class ScraperOrchestrator:
             
             # Comando con ruta corregida - ejecutar desde directorio del scraper
             cmd = [
-                'python', 'main.py',
+                'python', '-m', 'alkosto_scraper.main',  # Para alkosto
+                '--categoria', 'televisores',
                 '--paginas', str(paginas),
                 '--output', str(output_file)
             ]
