@@ -33,13 +33,3 @@ services:
 networks:
   arryn-network:
     driver: bridge
-    container_name: arryn-scrapers-test
-    environment:
-      - MONGODB_CONNECTION_STRING=${MONGODB_CONNECTION_STRING}
-      - DATABASE_NAME=smartcompare_ai
-      - COLLECTION_NAME=products
-    volumes:
-      - ./scraped_output:/app/scraped_output
-    profiles:
-      - testing
-    command: /bin/bash
