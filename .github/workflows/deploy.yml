@@ -1,0 +1,222 @@
+name: Deploy ServicioEjecucion to EC2
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Permite ejecución manual
+
+env:
+  EC2_HOST: "18.222.44.39"
+  EC2_USER: "ec2-user"
+  APP_DIR: "~/arryn-scrapers"
+  CONTAINER_NAME: "arryn-scrapers"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Run Tests
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        else
+          echo "Creating basic requirements.txt..."
+          cat > requirements.txt << EOF
+        requests>=2.28.0
+        beautifulsoup4>=4.11.0
+        selenium>=4.0.0
+        pymongo>=4.0.0
+        python-dotenv>=0.19.0
+        lxml>=4.9.0
+        pandas>=1.5.0
+        jsonlines>=3.0.0
+        EOF
+          pip install -r requirements.txt
+        fi
+    
+    - name: Run basic tests
+      run: |
+        python -c "
+        import sys
+        print('✅ Python import funcionando')
+        try:
+            import requests, pymongo, selenium
+            print('✅ Dependencias principales instaladas')
+        except ImportError as e:
+            print(f'❌ Error importando dependencias: {e}')
+            sys.exit(1)
+        print('🎉 Tests básicos pasados!')
+        "
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    name: Deploy to EC2
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+    
+    - name: Setup SSH key
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/ec2_key.pem
+        chmod 600 ~/.ssh/ec2_key.pem
+        ssh-keyscan -H ${{ env.EC2_HOST }} >> ~/.ssh/known_hosts
+    
+    - name: Create environment file
+      run: |
+        cat > .env << EOF
+        MONGODB_CONNECTION_STRING=${{ secrets.MONGODB_CONNECTION_STRING }}
+        DATABASE_NAME=${{ secrets.DATABASE_NAME }}
+        COLLECTION_NAME=${{ secrets.COLLECTION_NAME }}
+        EOF
+    
+    - name: Create basic requirements.txt if not exists
+      run: |
+        if [ ! -f requirements.txt ]; then
+          echo "⚠️  Creando requirements.txt básico..."
+          cat > requirements.txt << EOF
+        requests>=2.28.0
+        beautifulsoup4>=4.11.0
+        selenium>=4.0.0
+        pymongo>=4.0.0
+        python-dotenv>=0.19.0
+        lxml>=4.9.0
+        pandas>=1.5.0
+        jsonlines>=3.0.0
+        EOF
+        fi
+    
+    - name: Sync code to EC2
+      run: |
+        echo "🔄 Sincronizando código con EC2..."
+        rsync -avz -e "ssh -i ~/.ssh/ec2_key.pem -o StrictHostKeyChecking=no" \
+               --exclude='.git' \
+               --exclude='__pycache__' \
+               --exclude='venv' \
+               --exclude='*.pyc' \
+               --exclude='.github' \
+               . ${{ env.EC2_USER }}@${{ env.EC2_HOST }}:${{ env.APP_DIR }}/
+    
+    - name: Deploy to EC2
+      run: |
+        echo "🏗️  Construyendo container en EC2..."
+        ssh -i ~/.ssh/ec2_key.pem -o StrictHostKeyChecking=no ${{ env.EC2_USER }}@${{ env.EC2_HOST }} << 'EOF'
+          cd ${{ env.APP_DIR }}
+          
+          # Detener container existente si existe
+          if docker ps -a | grep -q ${{ env.CONTAINER_NAME }}; then
+              echo "🛑 Deteniendo container existente..."
+              docker stop ${{ env.CONTAINER_NAME }} || true
+              docker rm ${{ env.CONTAINER_NAME }} || true
+          fi
+          
+          # Limpiar imágenes antiguas
+          docker image prune -f
+          
+          # Actualizar submodules
+          echo "📥 Actualizando submodules..."
+          git submodule update --init --recursive
+          
+          # Construir nueva imagen
+          echo "🔨 Construyendo imagen Docker..."
+          docker build -t arryn-scrapers:latest .
+          
+          # Crear directorio para variables de entorno
+          mkdir -p ${{ env.APP_DIR }}/config
+        EOF
+    
+    - name: Copy environment variables
+      run: |
+        echo "⚙️  Configurando variables de entorno..."
+        scp -i ~/.ssh/ec2_key.pem -o StrictHostKeyChecking=no .env ${{ env.EC2_USER }}@${{ env.EC2_HOST }}:${{ env.APP_DIR }}/.env
+    
+    - name: Test deployment
+      run: |
+        echo "🧪 Testing container..."
+        ssh -i ~/.ssh/ec2_key.pem -o StrictHostKeyChecking=no ${{ env.EC2_USER }}@${{ env.EC2_HOST }} << 'EOF'
+          cd ${{ env.APP_DIR }}
+          
+          # Test de que el container funciona
+          echo "🔍 Testing container..."
+          docker run --rm --env-file .env arryn-scrapers:latest python -c "
+        import sys
+        print('✅ Python import funcionando')
+        try:
+            import requests, pymongo, selenium
+            print('✅ Dependencias principales instaladas')
+        except ImportError as e:
+            print(f'❌ Error importando dependencias: {e}')
+            sys.exit(1)
+        print('🎉 Container listo!')
+        "
+        EOF
+    
+    - name: Create execution scripts
+      run: |
+        echo "🏁 Creando scripts de ejecución..."
+        ssh -i ~/.ssh/ec2_key.pem -o StrictHostKeyChecking=no ${{ env.EC2_USER }}@${{ env.EC2_HOST }} << 'EOF'
+        cat > ${{ env.APP_DIR }}/run_scrapers.sh << 'SCRIPT'
+        #!/bin/bash
+        # Script para ejecutar scrapers con Docker
+        cd ${{ env.APP_DIR }}
+
+        SCRAPERS=${1:-"alkosto"}
+        PAGINAS=${2:-"1"}
+
+        echo "🚀 Ejecutando scrapers: $SCRAPERS con $PAGINAS páginas..."
+
+        docker run --rm \
+            --env-file .env \
+            -v ${PWD}/scraped_output:/app/scraped_output \
+            -v ${PWD}/logs:/app/logs \
+            arryn-scrapers:latest \
+            python scraper_orchestrator.py --scrapers $SCRAPERS --paginas $PAGINAS
+
+        echo "✅ Ejecución completada. Revisa /app/scraped_output para resultados"
+        SCRIPT
+
+        chmod +x ${{ env.APP_DIR }}/run_scrapers.sh
+        EOF
+    
+    - name: Deployment success notification
+      run: |
+        echo "🎉 ¡DESPLIEGUE COMPLETADO!"
+        echo "📋 El servicio está disponible en: ${{ env.EC2_HOST }}"
+        echo "🔗 Para ejecutar:"
+        echo "- Test: ssh ${{ env.EC2_USER }}@${{ env.EC2_HOST }} ${{ env.APP_DIR }}/run_scrapers.sh alkosto 1"
+        echo "- Production: ssh ${{ env.EC2_USER }}@${{ env.EC2_HOST }} ${{ env.APP_DIR }}/run_scrapers.sh \"alkosto exito falabella\" 3"
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: [test, deploy]
+    if: always()
+    
+    steps:
+    - name: Notify deployment status
+      run: |
+        if [ "${{ needs.deploy.result }}" == "success" ]; then
+          echo "✅ Deployment successful!"
+        else
+          echo "❌ Deployment failed!"
+          exit 1
+        fi
