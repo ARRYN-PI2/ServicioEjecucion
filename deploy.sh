@@ -10,7 +10,8 @@ echo "🚀 Iniciando despliegue de ServicioEjecucion en EC2..."
 # Variables
 EC2_HOST="18.222.44.39"
 EC2_USER="ec2-user"
-APP_DIR="/opt/arryn-scrapers"
+SSH_KEY="../../arryn-backend-key.pem"
+APP_DIR="~/arryn-scrapers"
 CONTAINER_NAME="arryn-scrapers"
 
 echo "📦 Step 1: Preparando archivos locales..."
@@ -43,7 +44,8 @@ fi
 echo "🔄 Step 2: Sincronizando código con EC2..."
 
 # Rsync código (excluyendo archivos innecesarios)
-rsync -avz --exclude='.git' \
+rsync -avz -e "ssh -i ${SSH_KEY}" \
+           --exclude='.git' \
            --exclude='__pycache__' \
            --exclude='venv' \
            --exclude='*.pyc' \
@@ -53,7 +55,7 @@ rsync -avz --exclude='.git' \
 echo "🏗️  Step 3: Construyendo container en EC2..."
 
 # Ejecutar comandos en EC2
-ssh ${EC2_USER}@${EC2_HOST} << EOF
+ssh -i ${SSH_KEY} ${EC2_USER}@${EC2_HOST} << EOF
     cd ${APP_DIR}
     
     # Detener container existente si existe
@@ -78,12 +80,12 @@ EOF
 echo "⚙️  Step 4: Configurando variables de entorno..."
 
 # Copiar .env a EC2 (usuario debe editarlo)
-scp .env ${EC2_USER}@${EC2_HOST}:${APP_DIR}/.env
+scp -i ${SSH_KEY} .env ${EC2_USER}@${EC2_HOST}:${APP_DIR}/.env
 
 echo "🧪 Step 5: Testing container..."
 
 # Test rápido del container
-ssh ${EC2_USER}@${EC2_HOST} << EOF
+ssh -i ${SSH_KEY} ${EC2_USER}@${EC2_HOST} << EOF
     cd ${APP_DIR}
     
     # Test de que el container funciona
@@ -104,7 +106,7 @@ EOF
 echo "🏁 Step 6: Creando scripts de ejecución..."
 
 # Crear script para ejecutar scrapers
-ssh ${EC2_USER}@${EC2_HOST} << EOF
+ssh -i ${SSH_KEY} ${EC2_USER}@${EC2_HOST} << EOF
 cat > ${APP_DIR}/run_scrapers.sh << 'SCRIPT'
 #!/bin/bash
 # Script para ejecutar scrapers con Docker

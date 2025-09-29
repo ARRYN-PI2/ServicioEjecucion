@@ -23,8 +23,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar código fuente
 COPY . .
 
-# Inicializar submodules
-RUN git submodule update --init --recursive
+# Submodules ya incluidos en el rsync
 
 # Crear directorios necesarios
 RUN mkdir -p scraped_output backups
