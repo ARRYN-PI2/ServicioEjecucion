@@ -3,6 +3,19 @@
 .AppleDouble
 .LSOverride
 
+# Environment files
+.env
+.env.local
+.env.production
+.env.staging
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+logs/
+*.log
+
 # Python
 __pycache__/
 *.py[cod]

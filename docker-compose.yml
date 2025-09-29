@@ -1,25 +1,38 @@
 version: '3.8'
 
 services:
-  servicio-ejecucion:
+  servicioejeucion:
     build: .
-    container_name: arryn-scrapers
+    container_name: arryn-servicioejeucion
+    restart: unless-stopped
     environment:
       - MONGODB_CONNECTION_STRING=${MONGODB_CONNECTION_STRING}
-      - DATABASE_NAME=smartcompare_ai
-      - COLLECTION_NAME=products
-      - PYTHONUNBUFFERED=1
+      - MONGODB_PASSWORD=${MONGODB_PASSWORD}
+      - DATABASE_NAME=${DATABASE_NAME:-smartcompare_ai}
+      - COLLECTION_NAME=${COLLECTION_NAME:-products}
     volumes:
-      - ./scraped_output:/app/scraped_output
-      - ./backups:/app/backups
       - ./logs:/app/logs
-    working_dir: /app
-    command: tail -f /dev/null
-    tty: true
-    stdin_open: true
+      - ./scraped_output:/app/scraped_output  
+      - ./backups:/app/backups
+    ports:
+      - "8080:8080"
+    networks:
+      - arryn-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "print('healthy')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
-  scraper-test:
-    build: .
+networks:
+  arryn-network:
+    driver: bridge
     container_name: arryn-scrapers-test
     environment:
       - MONGODB_CONNECTION_STRING=${MONGODB_CONNECTION_STRING}

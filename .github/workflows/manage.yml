@@ -1,0 +1,79 @@
+name: Container Management
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        type: choice
+        options:
+        - restart
+        - stop
+        - logs
+        - status
+        - backup
+        - run-scraper
+        - clean-logs
+
+jobs:
+  manage:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 🔧 Configure SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.EC2_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+    
+    - name: 🎯 Execute Action - ${{ github.event.inputs.action }}
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << EOF
+          cd ~/arryn-scrapers
+          
+          case "${{ github.event.inputs.action }}" in
+            "restart")
+              echo "🔄 Restarting container..."
+              docker-compose restart
+              sleep 10
+              docker-compose ps
+              ;;
+            "stop")
+              echo "🛑 Stopping container..."
+              docker-compose down
+              docker-compose ps
+              ;;
+            "logs")
+              echo "📝 Container logs (last 100 lines):"
+              docker-compose logs --tail=100
+              ;;
+            "status")
+              echo "📊 Container status:"
+              docker-compose ps
+              echo ""
+              echo "📈 Resource usage:"
+              docker stats --no-stream --format "table {{.Container}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}" | head -5
+              echo ""
+              echo "💾 Disk usage:"
+              df -h | grep -E "(Filesystem|/dev/)"
+              ;;
+            "backup")
+              echo "💾 Creating backup..."
+              docker-compose exec -T servicioejeucion python mongo_backup.py --backup-only --collection products || true
+              echo "Backup files:"
+              ls -la backups/ | tail -5
+              ;;
+            "run-scraper")
+              echo "🕷️ Running product uploader..."
+              docker-compose exec -T servicioejeucion python product_uploader.py --file products.json || true
+              ;;
+            "clean-logs")
+              echo "🧹 Cleaning old logs..."
+              find logs/ -name "*.log" -mtime +7 -delete 2>/dev/null || true
+              find scraped_output/ -name "*.json" -mtime +30 -delete 2>/dev/null || true
+              echo "Cleanup completed"
+              ;;
+          esac
+        EOF

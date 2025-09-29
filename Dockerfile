@@ -1,7 +1,8 @@
-# Dockerfile para ServicioEjecucion
-FROM python:3.9-slim
+FROM python:3.11-slim
 
-# Instalar dependencias del sistema necesarias para scrapers
+WORKDIR /app
+
+# Instalar dependencias del sistema necesarias para scrapers y monitoreo
 RUN apt-get update && apt-get install -y \
     wget \
     curl \
@@ -9,10 +10,9 @@ RUN apt-get update && apt-get install -y \
     git \
     chromium \
     chromium-driver \
+    cron \
+    procps \
     && rm -rf /var/lib/apt/lists/*
-
-# Crear directorio de trabajo
-WORKDIR /app
 
 # Copiar requirements primero (para cache de Docker)
 COPY requirements.txt .
@@ -23,18 +23,26 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar código fuente
 COPY . .
 
-# Submodules ya incluidos en el rsync
-
 # Crear directorios necesarios
-RUN mkdir -p scraped_output backups
+RUN mkdir -p /app/logs /app/scraped_output /app/backups
+
+# Script de inicio que mantiene el container corriendo
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
 
 # Variables de entorno para Chrome (necesario para Falabella)
 ENV DISPLAY=:99
 ENV CHROME_BIN=/usr/bin/chromium
 ENV CHROME_PATH=/usr/bin/chromium
+ENV PYTHONPATH=/app
+ENV PYTHONUNBUFFERED=1
 
-# Exponer puerto (si necesario para logs/monitoreo)
-EXPOSE 8000
+# Healthcheck para monitoreo
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD python -c "import sys; print('Container healthy'); sys.exit(0)" || exit 1
 
-# Comando por defecto - mostrar ayuda
-CMD ["python", "-c", "print('ServicioEjecucion Docker Container Ready!\\nUse: docker run -e MONGODB_CONNECTION_STRING=your_string container_name python scraper_orchestrator.py --help')"]
+# Puerto para posible API de monitoreo
+EXPOSE 8080
+
+# Comando por defecto - mantiene container corriendo
+CMD ["/docker-entrypoint.sh"]

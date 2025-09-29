@@ -1,0 +1,64 @@
+name: Monitor Container Health
+
+on:
+  schedule:
+    # Ejecutar cada 6 horas
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 🔧 Configure SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.EC2_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+    
+    - name: 🔍 Check Container Status
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
+          cd ~/arryn-scrapers
+          
+          # Check if container is running
+          if ! docker-compose ps | grep -q "Up"; then
+            echo "❌ Container is down, restarting..."
+            docker-compose up -d
+            sleep 30
+          fi
+          
+          # Get container stats
+          echo "📊 Container Status:"
+          docker-compose ps
+          
+          echo ""
+          echo "📈 Container Resources:"
+          docker stats --no-stream --format "table {{.Container}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}" | head -5
+          
+          echo ""
+          echo "📝 Recent Container Logs:"
+          docker-compose logs --tail=10
+          
+          # Check status file
+          if [ -f logs/status.json ]; then
+            echo ""
+            echo "🔍 Health Status:"
+            cat logs/status.json | head -20
+          fi
+          
+          # Check disk usage
+          echo ""
+          echo "💾 Disk Usage:"
+          df -h | grep -E "(Filesystem|/dev/)"
+          
+          # Cleanup old logs if needed
+          find logs/ -name "*.log" -mtime +7 -delete 2>/dev/null || true
+          find scraped_output/ -name "*.json" -mtime +30 -delete 2>/dev/null || true
+        EOF
+    
+    - name: 🚨 Alert on Issues
+      run: |
+        echo "Monitor completed. Check logs above for any issues."
