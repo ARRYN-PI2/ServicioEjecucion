@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  servicio-ejecucion:
+    build: .
+    container_name: arryn-scrapers
+    environment:
+      - MONGODB_CONNECTION_STRING=${MONGODB_CONNECTION_STRING}
+      - DATABASE_NAME=smartcompare_ai
+      - COLLECTION_NAME=products
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./scraped_output:/app/scraped_output
+      - ./backups:/app/backups
+      - ./logs:/app/logs
+    working_dir: /app
+    command: tail -f /dev/null
+    tty: true
+    stdin_open: true
+
+  scraper-test:
+    build: .
+    container_name: arryn-scrapers-test
+    environment:
+      - MONGODB_CONNECTION_STRING=${MONGODB_CONNECTION_STRING}
+      - DATABASE_NAME=smartcompare_ai
+      - COLLECTION_NAME=products
+    volumes:
+      - ./scraped_output:/app/scraped_output
+    profiles:
+      - testing
+    command: /bin/bash
