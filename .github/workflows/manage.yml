@@ -33,6 +33,13 @@ jobs:
         ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << EOF
           cd ~/arryn-scrapers
           
+          # Install docker-compose if not exists
+          if ! command -v docker-compose &> /dev/null; then
+            echo "📦 Installing docker-compose..."
+            sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-\$(uname -s)-\$(uname -m)" -o /usr/local/bin/docker-compose
+            sudo chmod +x /usr/local/bin/docker-compose
+          fi
+          
           case "${{ github.event.inputs.action }}" in
             "restart")
               echo "🔄 Restarting container..."

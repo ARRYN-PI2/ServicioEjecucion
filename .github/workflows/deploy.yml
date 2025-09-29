@@ -49,13 +49,20 @@ jobs:
         ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
           cd ${{ env.APP_DIR }}
           
+          # Install docker-compose if not exists
+          if ! command -v docker-compose &> /dev/null; then
+            echo "📦 Installing docker-compose..."
+            sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+            sudo chmod +x /usr/local/bin/docker-compose
+          fi
+          
           # Update git submodules if they exist
           if [ -d ".git" ]; then
             git submodule update --init --recursive 2>/dev/null || true
           fi
           
           # Stop existing container if running
-          if docker-compose ps | grep -q "Up"; then
+          if docker-compose ps 2>/dev/null | grep -q "Up"; then
             echo "🛑 Stopping existing container..."
             docker-compose down
           fi
