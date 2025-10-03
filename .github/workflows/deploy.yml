@@ -44,11 +44,13 @@ jobs:
         COLLECTION_NAME=${{ secrets.COLLECTION_NAME }}
         EOF
         
+        # First sync - include .gitmodules for submodule info
         rsync -avz -e "ssh -o StrictHostKeyChecking=no" \
-               --exclude='.git' \
                --exclude='__pycache__' \
                --exclude='venv' \
                --exclude='*.pyc' \
+               --include='.gitmodules' \
+               --exclude='.git/*' \
                . ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:${{ env.APP_DIR }}/
     
     - name: 🚀 Deploy to EC2
@@ -63,9 +65,48 @@ jobs:
             sudo chmod +x /usr/local/bin/docker-compose
           fi
           
-          # Update git submodules if they exist
-          if [ -d ".git" ]; then
-            git submodule update --init --recursive 2>/dev/null || true
+          # Initialize git repository and update submodules
+          if [ ! -d ".git" ]; then
+            echo "🔧 Initializing git repository..."
+            git init
+            git remote add origin https://github.com/ARRYN-PI2/ServicioEjecucion.git
+          fi
+          
+          # Ensure .gitmodules exists and initialize submodules
+          if [ -f ".gitmodules" ]; then
+            echo "📦 Initializing and updating submodules..."
+            git submodule update --init --recursive --force 2>/dev/null || {
+              echo "⚠️ Git submodule failed, manually syncing scrapers..."
+              
+              # Manual sync of scrapers as backup
+              mkdir -p scrapers/alkosto scrapers/exito scrapers/falabella
+              
+              # Clone alkosto scraper if empty
+              if [ ! -f "scrapers/alkosto/main.py" ]; then
+                rm -rf scrapers/alkosto/*
+                git clone --depth 1 https://github.com/ARRYN-PI2/scraper-alkosto.git temp_alkosto
+                cp -r temp_alkosto/* scrapers/alkosto/
+                rm -rf temp_alkosto
+              fi
+              
+              # Clone exito scraper if empty  
+              if [ ! -f "scrapers/exito/main.py" ]; then
+                rm -rf scrapers/exito/*
+                git clone --depth 1 https://github.com/ARRYN-PI2/scraper-exito.git temp_exito
+                cp -r temp_exito/* scrapers/exito/
+                rm -rf temp_exito
+              fi
+              
+              # Clone falabella scraper if empty
+              if [ ! -f "scrapers/falabella/scrape_falabella_all.py" ]; then
+                rm -rf scrapers/falabella/*
+                git clone --depth 1 https://github.com/ARRYN-PI2/scraper-falabella.git temp_falabella
+                cp -r temp_falabella/* scrapers/falabella/
+                rm -rf temp_falabella
+              fi
+            }
+          else
+            echo "⚠️ No .gitmodules found, skipping submodules"
           fi
           
           # Stop existing container if running
